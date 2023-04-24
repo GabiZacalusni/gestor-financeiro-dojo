@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gestor Financeiro</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>My Money</h1>
+      </header>
+      <nav class="navegacao">
+        <div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Cadastro</a></li>
+            <li><a href="/">Contato</a></li>
+            <li><a href="/">Sobre</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="card">
+        <fieldset>
+          <legend>Cadastro de Usuário</legend>
+          <form>
+            <label class="label">
+              ID:
+              <input type="number" id="id" />
+            </label>
+
+            <label class="label">
+              Descrição:
+              <input type="text" id="descricao" />
+            </label>
+
+            <label class="label">
+              Valor:
+              <input type="number" id="valor" />
+            </label>
+
+            <label class="label">
+              Categoria:
+              <select id="categoria">
+                <option value="" disabled selected>
+                  Selecione uma categoria
+                </option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="transporte">Transporte</option>
+                <option value="aluguel">Aluguel de Imóvel</option>
+                <option value="luz">Luz</option>
+                <option value="agua">Água</option>
+              </select>
+            </label>
+
+            <label class="label">
+              Data de Vencimento:
+              <input type="date" id="data" />
+            </label>
+
+            <label class="label">
+              Situação:
+              <select id="situacao">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Pago">Pago</option>
+                <option value="Nao Pago">Não Pago</option>
+              </select>
+            </label>
+
+            <button id="botaoAdicionar" onclick="adicionar()" type="button">
+              Adicionar
+            </button>
+            <button id="botaoCancelar" onclick="limpar()" type="button">
+              Limpar
+            </button>
+          </form>
+        </fieldset>
+      </section>
+
+      <section class="card">
+        <fieldset>
+          <legend>Minhas Contas</legend>
+          <table border="1">
+            <thead>
+              <th>ID</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Categoria</th>
+              <th>Data de Vencimento</th>
+              <th>Situação</th>
+              <th>Ações</th>
+            </thead>
+            <tbody id="tabela"></tbody>
+          </table>
+        </fieldset>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

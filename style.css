@@ -1,0 +1,137 @@
+
+body{
+  background-image:url(img/pexels-andrew-neel-2312369.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-size: 80em;
+  
+ 
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(15, 15, 15);
+  font-size: 50px;
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 100px;
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.label {
+  font-size: 20px;
+  color: rgb(104, 98, 100);
+  display: inline-block;
+}
+
+.card {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(238, 235, 235);
+  height: 300px 300pxs;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 2px;
+  opacity: 0.9;
+  
+}
+
+fieldset {
+  background-color: rgb(241, 240, 240);
+  color: rgb(134, 134, 134);
+  font-size: 30px;
+  border-radius: 4px;
+  font-weight: 100px;
+  height: 420px;
+  width: 490px;
+}
+
+legend {
+  color: rgb(10, 10, 10);
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px 20px;
+  font-weight: 100px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px auto;
+  background-color: rgb(10, 10, 10);
+  border: none;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: rgb(238, 235, 236);
+  color: rgb(31, 31, 31);
+}
+  
+
+td,
+th {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: rgb(224, 222, 223);
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 1px solid #333;
+  
+}
+input {
+  padding: 8px;
+  margin: 8px 8px;
+  border-radius: 20px;
+  background-color: rgb(165, 165, 164);
+  border: none;
+}
+
+select {
+  padding: 8px;
+  margin: 8px 8px;
+  border-radius: 20px;
+  background-color: rgb(165, 165, 164);
+  border: none;
+}
+
