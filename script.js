@@ -2,41 +2,42 @@ let informacoes = [];
 
 function adicionar() {
 
-  const id = Number(document.getElementById("id").value);
+  const id = informacoes.length + 1;
   const descricao = document.getElementById("descricao").value;
   const valor = Number(document.getElementById("valor").value);
   const categoria = document.getElementById("categoria").value;
   const data = document.getElementById("data").value;
   const situacao = document.getElementById("situacao").value;
 
-  if(id == ""){
-    alert("Preencha o campo ID !");
+  if (descricao === "") {
+    return alert("Preencha o campo descricao !");
   }
-  if(descricao == ""){
-    alert("Preencha o campo descricao !");
+
+  if (valor === "") {
+    return alert("Preencha o campo valor !");
   }
-  if(valor == ""){
-    alert("Preencha o campo valor !");
+
+  if (data === "") {
+    return alert("Preencha o campo data !");
   }
-  if(data == ""){
-    alert("Preencha o campo data !");
+
+  if (categoria === "") {
+    return alert("Preencha o campo categoria !");
   }
-  if(categoria == ""){
-    alert("Preencha o campo categoria !");
+
+  if (situacao === "") {
+    return alert("Preencha o campo situacao !");
   }
-  if(situacao == ""){
-    alert("Preencha o campo situacao !");
-  }
-  else{
-    informacoes.push({
-      id: id,
-      descricao: descricao,
-      valor: valor,
-      categoria: categoria,
-      data: data,
-      situacao: situacao,
-    });
-  }
+
+  informacoes.push({
+    id: id,
+    descricao: descricao,
+    valor: valor,
+    categoria: categoria,
+    data: data,
+    situacao: situacao,
+  });
+
   montarTabela();
 }
 
@@ -75,7 +76,7 @@ function limpar() {
 
 function excluir(indice) {
   const desejaExcluir = confirm(`Excluir ID ${informacoes[indice].id}?`);
-  if(desejaExcluir){
+  if (desejaExcluir) {
     informacoes.splice(indice, 1);
     montarTabela();
   }
